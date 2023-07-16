@@ -328,7 +328,7 @@ main section{
     }
     .footer-parent{
         flex-direction: column;
-        padding: 20px;
+        padding:100px 20px 0;
     }
     .footer-data.footer-title,.section-title{
         text-align: center;
@@ -380,11 +380,9 @@ main section{
     }
     .second-button{
         margin: 20px auto 20px;
-
     }
     .primary-button{
-        
-        text-align: center;
+        margin-bottom: 20px;
     }
     .btn-cont{
         margin: 0 auto;
