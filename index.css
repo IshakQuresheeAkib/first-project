@@ -5,26 +5,29 @@
     padding: 0;
     max-width: 100%;
 }
+/* styling header */
 .header{
+    width: 100vw;
+    height: 100vh;
     background-color: #FFF8F3;
     background-image:url(./images/header_bg.png),url(./images/developer.png);
     background-repeat:no-repeat;
-    background-position: bottom right, left;
-    background-size:auto,11.5vh ;
+    background-position: bottom right,top left;
+    background-size:auto,13vh ;
+    position: relative;
 }
-
+/* styling nav bar */
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:27px 150px;
-    gap:633px;
-
+    padding:27px 0;
 }
 .nav-title{
     color: #181818;
     font-size: 45px;
-    font-weight: 800;
+    font-weight: 900;
+    padding-left:150px;
 }
 .primary-color{
     color:#FD6E0A;
@@ -49,120 +52,120 @@ nav a{
     border-radius: 5px;
     background: #FD6E0A;
     border: none;
-    padding: 10px 15px;
-    width: 200px;
+    padding: 10px 10px;
+    width: 190px;
     height: 64px;
 }
 .second-button{
     border-radius: 5px;
     border: 1px solid #FD6E0A;
-    width: 160px;
+    width: 190px;
     height: 64px;
-    color: #FD6E0A;
+    color: #ff6a00;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
     margin-left: 30px;
     background-color: #FFF8F3;
 }
+/* styling main content of header */
 .banner{
-    padding-left:150px;
+    max-width: 100vw;
+    height: auto;
+    padding:150px 150px 0;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    line-height: 1.5;
 }
 .banner .profile-picture{
-    width: 584px;
-    height: 676px;
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
 }
 .banner-greetings{
     color:  #474747;
     font-size: 35px;
-    font-weight:600;
-    margin-bottom: 0;
+    font-weight:700;
 }
 .banner-title{
     color: #181818;
     font-size: 65px;
     font-weight: 700;
-    margin-top: 5px;
 }
 .banner>div>p{
     width: 585px;
     color: #757575;
-    font-family: Open Sans;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
+    font-weight: 300;
+    line-height: 2.5;
+    margin: 10px auto;
 }
-/* Styling About me section */
+
+/* Styling Main section */
 main{
-    max-width: 1140px;
+    max-width:100vw;
     margin: 0 auto;
 }
 main section{
     margin-top: 130px;
 }
+/* styling about-me section */
+.about-me{
+    width: 70%;
+    border-radius: 10px;
+    background: #FFF8F3;
+    padding: 130px 155px;
+    margin: 130px auto;
+}
 .section-title{
-    color: #181818;
+    color: #181818d7;
     text-align: center;
     font-size: 35px;
-    font-weight: 700;
-    margin-bottom: 30px;
+    font-weight: 800;
 }
 .section-description{
     color: #757575;
     text-align: center;
     font-size: 18px;
     font-weight: 400;
-    line-height: 30px;
-    margin-bottom: 30px;
+    line-height: 2.5;
+    padding: 50px 0;
+    width:70%;
+    margin: 0 auto;
 }
-.about{
-    border-radius: 10px;
-    background: #FFF8F3;
-    padding: 130px 155px;
-    margin: 130px 0px;
-}
-.info-container{
+.about-me-container{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #757575;
     text-align: center;
     font-size: 20px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.5;
 }
 .info>h4{
-    font-weight: bold;
+    font-weight: 700;
     color:#4e4e4e;
 }
-#what-i-do-description{
-    padding: 50px;
-}
+
+/* styling what i do or skill section */
 .skills{
-    width: 267px;
-    height: 377px;
-    margin-right: 24px;
     border-radius: 5px;
     background: #FFF;
-    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
-    gap: 24px;
+    box-shadow: 0px 0px 10px 2px rgba(112, 109, 109, 0.219);
 }
-
-.skill-container{
+.skills-container{
+    width: 80vw;
     display: flex;
-    justify-content: center;
-    padding:50px 230px;
-    margin-bottom: 130px;
+    gap:30px;
+    margin: 0 auto;
+    padding-bottom:150px;
 }
-.skill-description{
+.skills-description{
     color:#757575;
     font-size: 16px;
     font-weight: 400;
-    line-height: 28px;
-    width: 201px;
+    line-height: 2;
 }
 .skills-heading{
     color:#181818;
@@ -176,7 +179,7 @@ main section{
 .summary-box{
     width: 511px;
 }
-
+/* styling resume */
 .summary-cont{
     display: flex;
     justify-content: center;
@@ -199,6 +202,7 @@ main section{
     font-size: 20px;
     font-weight: 600;
     margin:10px 0 20px;
+    text-align: start;
 }
 .p2{
     width: 511px;
@@ -208,14 +212,16 @@ main section{
     line-height: 28px;
     margin:20px 72px 60px 0px;
 }
-#alignment-btn{
-    margin:69px 400px 120px;
-    
+.btn-cont{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
 }
 .summary hr{
     margin: 30px 0;
     opacity: 0.3;
 }
+/* styling footer */
 .footer-parent{
     max-width: 100%;
     margin:auto 0;
@@ -226,7 +232,7 @@ main section{
 }
 footer{
     height: 780px;
-    background-color: #FFF8F3;
+    background-color: #faf1eb;
 }
 .footer-title{
     color:#181818;
@@ -252,6 +258,7 @@ footer{
 .child2 textarea{
     width: 461px;
     height: 180px;
+    border: none;
     border-radius: 5px;
     background: #FFF;
     margin:24px 0;
@@ -277,4 +284,31 @@ h6{
     opacity: 0.6;
     margin-top: 0;
     padding-bottom: 10px;
+}
+.hide{
+    display: none;
+}
+
+/* responciveness */
+/* mobile devices */
+@media screen and (max-width:576px) {
+    .about-me{
+        width:fit-content;
+        padding:0 10px;
+        margin: 5px auto;
+    }
+    .skills-container{
+        flex-direction: column;
+        padding: 20px auto;
+    }
+    .summary-cont{
+        flex-direction: column;
+        padding:0 20px;
+        margin-top: 5px;
+    }
+    .footer-parent{
+        flex-direction: column;
+        padding: 10px;
+    }
+    
 }
